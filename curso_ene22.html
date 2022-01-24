@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style_propio.css">
+    <title>Tablas y listas</title>
+</head>
+
+<body class="contenedor">
+    <div>
+        <nav class="menu">
+            <a class="enlace1" href="./home.html">HOME</a>
+            <a class="enlaces" href="./conocenos.html">CONÓCENOS</a>
+            <a class="enlaces" href="./curso_ene22.html">PROMOCIÓN ENE'22</a>
+            <a class="enlaces" href="./formulario.html">INSCRIBETE</a>
+            <a class="enlace3" href="./contacto.html">CONTACTO</a>
+        </nav>
+    </div>
+
+    <div class="cabecera">
+        <div class=logo>
+            <img src="./images/images/letscoder-square.jpeg" alt="logo">
+        </div>
+        <div class="titulo">
+            <h1>/et's [oder</h1>
+        </div>
+    </div>
+    <h2 class="subtitulo">CURSO ENERO 2022</h2>
+    <div class="cuerpo_alumnos">
+        <div class="lista ordenada">
+            <h3>ESTRUCTURA DE UNA LINEA</h3>
+            <div class="columna1">
+                <div class="etiquetas">
+                    <ol>
+                        <p>ETIQUETAS</p>
+                        <li value="">&#60;p&#62;</li>
+                        <li>&#60;h1&#62;...&#60;h6&#62;</li>
+                        <li>&#60;div&#62;</li>
+                        <li>&#60;th&#62;</li>
+                        <li>&#60;td&#62;</li>
+                        <li>&#60;caption&#62;</li>
+                        <li>&#60;img&#62;</li>
+                        <li>&#60;a&#62;</li>
+                        <li>&#60;li&#62;</li>
+                        <li>&#60;dt&#62;</li>
+                        <li>&#60;dd&#62;</li>
+                        <li>Entre otras...</li>
+                    </ol>
+                </div>
+                <div class="atributos">
+                    <ol>
+                        <p>ATRIBUTOS</p>
+                        <li>href=</li>
+                        <li>title=</li>
+                        <li>src=</li>
+                        <li>type=</li>
+                        <li>for=</li>
+                        <li>Entre otras...</li>
+                    </ol>
+                </div>
+                <div class="valor">
+                    <ol>
+                        <p>VALOR</p>
+                        <li>"nombre"</li>
+                        <li>"text"</li>
+                        <li>"submit"</li>
+                        <li>"button"</li>
+                        <li>Entre otras...</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+        <div class="alumnos">
+            <table class="table">
+                <caption>ALUMNOS PROMOCIÓN ENERO 2022</caption>
+                <div>
+                    <thead>
+                        <tr>
+                            <th scope="row">NOMBRE</th>
+                            <th>CIUDAD</th>
+                            <th>EDAD</th>
+                            <th>COMIDA FAVORITA</th>
+                            <th>HOBBY</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>ANDREA</th>
+                            <td>Barcelona</td>
+                            <td>35</td>
+                            <td>Hamburguesas</td>
+                            <td>Patinar</td>
+                        </tr>
+                        <tr>
+                            <th>RAFA</th>
+                            <td>Madrid</td>
+                            <td>43</td>
+                            <td>Salmorejo</td>
+                            <td rowspan="2">Baloncesto</td>
+                        </tr>
+                        <tr>
+                            <th>ARTURO</th>
+                            <td rowspan="3">Zaragoza</td>
+                            <td>41</td>
+                            <td>Huevos Rotos</td>
+
+                        </tr>
+                        <tr>
+                            <th>RAFAEL</th>
+                            <td>26</td>
+                            <td>Canelones</td>
+                            <td>Juegos de estrategia</td>
+                        </tr>
+                        <tr>
+                            <th>LUIS</th>
+                            <td>33</td>
+                            <td>Migas</td>
+                            <td>Fútbol</td>
+                        </tr>
+                        <tr>
+                            <th>DANNY</th>
+                            <td>Soria</td>
+                            <td>39</td>
+                            <td>Pizza Italiana</td>
+                            <td>Pilotar Drones</td>
+                        </tr>
+                    </tbody>
+                </div>
+            </table>
+        </div>
+        <div class="lista desordenada">
+            <h3>ESTRUCTURA DE ELEMENTOS</h3>
+            <div class="columna2">
+                <ul>
+                    <p>UBICACIÓN:</p>
+                    <li>body&#123;</li>
+                    <li>body .cuerpo&#123;</li>
+                    <li>body .cuerpo h1&#123;</li>
+                    <li>body .cuerpo h1:hover&#123;</li>
+                    <li>Entre otras...</li>
+                </ul>
+                <ul>
+                    <p>ATRIBUTOS:</p>
+                    <li>text-align: center;</li>
+                    <li>padding: 5px;</li>
+                    <li>background-color: silver;</li>
+                    <li>Entre otras...</li>
+                </ul>
+                <ul>
+                    <p>OTROS PARÁMETROS COMO:</p>
+                    <li>FlexBox</li>
+                    <li>Listas</li>
+                    <li>Tablas</li>
+                    <li>Formularios</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="horario">
+        <h3>PLANNING DEL DÍA</h3>
+        <div>
+            <dl>
+                <dt>09:00 a 09:15</dt>
+                <dd><span>DAILY MEETING:</span> Reunión con el Mentor para tratar como avanzamos con los proyectos.</dd>
+            </dl>
+            <dl>
+                <dt>09:15 a 10:00</dt>
+                <dd><span>REUNIONES PERSONALES CON EL MENTOR:</span> Le exponemos dudas que nos hallan quedado en el día
+                    anterior o con nuestro proyecto.</dd>
+            </dl>
+            <dl>
+                <dt>10:00 a 11:15</dt>
+                <dd><span>WORKSHOP SOBRE EL TEMA DEL DÍA:</span> Clase con el Mentor explicando las temáticas que
+                    después aplicaremos al proyecto.</dd>
+            </dl>
+            <dl>
+                <dt>11:15 a 11:45</dt>
+                <dd><span>DESAYUNO, TIEMPO DE DESCANSO.</span></dd>
+            </dl>
+            <dl>
+                <dt>11:45 a 14:00</dt>
+                <dd><span>TRABAJO EN PROYECTOS:</span> Aplicamos los conocimientos adquiridos.</dd>
+            </dl>
+            <dl>
+                <dt>14:00 a 15:00</dt>
+                <dd><span>COMIDA:</span> TIEMPO DE DESCANSO.</dd>
+            </dl>
+            <dl>
+                <dt>15:00 a 17:00</dt>
+                <dd><span>TRABAJO EN PROYECTOS:</span> Continuamos con nuestro trabajo, y concertamos citas con el
+                    mentor para solucionar dudas que existan en la metodología.</dd>
+            </dl>
+            <dl>
+                <dt>17:00 a 17:30</dt>
+                <dd><span>CAFETERÍA:</span> Finalizamos la jornada con una charla distendida para desconectar y dar por
+                    finalizado el día.</dd>
+            </dl>
+        </div>
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <div class="iconos">
+            <div>
+                <a title="Instagram" href="https://www.instagram.com/lets_coder/"><img src="images/images/Instagram.png"
+                        alt="Instagram"></a>
+            </div>
+            <div>
+                <a title="Facebook" href="https://www.facebook.com/letscoder"><img src="images/images/facebook.png"
+                        alt="Facebook"></a>
+            </div>
+            <div>
+                <a title="Linkedin" href="https://www.linkedin.com/company/letscoder"><img
+                        src="images/images/linkedin2.png" alt="Linkedink"></a>
+            </div>
+        </div>
+        <div class="rotulo">
+            <div>
+                <a title="letscoder" href="./home.html"><img src="/images/images/letscoder-sin-fondo.png"
+                        alt="letscoder"></a>
+            </div>
+        </div>
+        <div class="enlaces">
+            <a href="mailto:">hola@letscoder.com</a>
+            <a href="tel:+34 931 227 721">LLAMANOS AL +34 931 227 721</a>
+        </div>
+    </div>
+
+</footer>
+
+</html>

@@ -1,0 +1,609 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* GENERAL ESTILO*/
+
+    .contenedor{
+    background-color:honeydew;
+}
+    .menu{
+    border: 2px rgb(51, 51, 51) solid;
+    padding: 12px;
+    size: 10%;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-color: silver;
+    box-shadow: 3px 3px 3px rgb(51, 51, 51);
+}
+    .menu a{
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    padding: 20px;
+}
+    .cabecera{
+    background-image:url(/images/images/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    height: 280px;
+}
+    .cabecera .logo img{
+    width: 200px;
+     height: 200px;
+     border-radius: 20%;
+     margin-left: 50px;
+     margin-top: 35px;
+     box-shadow: 10px 10px 10px rgb(51, 51, 51);
+     border: 2px rgb(51, 51, 51) solid;
+}
+    .cabecera .titulo{
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 900;  
+    margin-top: -45px; 
+    margin-left: 10px;
+    text-align: center;
+    position: relative;
+    top: -130px;
+    color: white;
+    font-size: 50px;
+    font-style:normal;
+    text-shadow: 2px  1px 1px rgb(51, 51, 51),
+               1px  2px 1px rgb(51, 51, 51),
+              0px  1px 1px rgb(51, 51, 51),
+               1px 0px 1px rgb(51, 51, 51);
+    animation-duration: 6s;
+    animation-name: my-animacion;
+    animation-iteration-count:infinite;
+}
+    @keyframes my-animacion{
+        0%{
+            opacity:0;
+        }
+        15%{opacity: .15;
+        }
+        25%{
+            opacity:.35;
+        }
+        45%{
+            opacity: .15;
+        }
+        75%{
+            opacity: 0;
+        }
+}
+    .cuerpo .subtitulo{
+        text-align: center;
+        font-size: 50px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-weight: 600; 
+        color:rgb(51, 51, 51);
+}
+
+/* HOME */
+
+    .cuerpo .fechas{
+       text-align: center;
+       width: 100%;
+       margin-top: 40px;  
+}
+    .cuerpo .fechas .fecha1{
+        border: 2px rgb(51, 51, 51) solid;
+        background-color:white;
+        padding: 30px;
+        size: 10%;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 20%;
+        margin-right: 1550px;
+        margin-left: 40px;
+        box-shadow: 10px 10px 10px rgb(51, 51, 51);
+        transition: all 2s; 
+        color:rgb(51, 51, 51);
+}
+    .cuerpo .fechas .fecha2{
+        border: 2px rgb(51, 51, 51) solid;
+        background-color:white;
+        padding: 30px;
+        size: 10%;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 20%;
+        margin-left: 480px;
+        margin-top: -145px;
+        box-shadow: 10px 10px 10px rgb(51, 51, 51);
+        transition: all 2s;
+        color:rgb(51, 51, 51);
+}
+    .cuerpo .fechas .fecha3{
+        border: 2px rgb(51, 51, 51) solid;
+        background-color:white;
+        padding: 30px;
+        size: 10%;
+        text-align: center;
+        width: 300px;
+        height: 300px;
+        border-radius: 20%;
+        margin-left: 920px;
+        margin-top: -145px;
+        margin-bottom: 100px;
+        box-shadow: 10px 10px 10px rgb(51, 51, 51);
+        transition: all 2s;
+        color:rgb(51, 51, 51);
+}
+    .cuerpo .fechas .negrita{
+        font-weight: 600; 
+        font-size: 30px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+    .cuerpo .fechas p{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+        color:rgb(51, 51, 51);
+}
+    .cuerpo .fechas span{
+        font-style: italic;
+}
+    .cuerpo .fechas button{
+    vertical-align: 15px;
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
+    background-color:gold;
+    font-size: 20px;
+    text-align: center;
+    padding: 10px;
+    height:120px;
+    width: 120px;
+    border-radius: 20%;
+    transition: all 2s;
+    cursor: pointer;
+    color:rgb(51, 51, 51);
+}
+
+/* CONOCENOS */
+
+    .cuerpo .texto1{
+        border: 2px rgb(51, 51, 51);
+     border-radius: 20px;
+     text-align: center;
+     font-size: 20px;
+     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     margin-right: 100px;
+     margin-left: 100px;
+     margin-top: 60px;
+     margin-bottom: 30px;
+     background-color:rgb(51, 51, 51) ;
+     box-shadow: 10px 10px 10px rgb(51, 51, 51);
+     color: white;
+}
+.caja_mentores .mentor .subtitulo{
+    font-size: 25px;
+}
+    .cuerpo .texto1_1{
+        border: 2px rgb(51, 51, 51);
+        border-radius: 20px;
+        text-align: center;
+        font-size: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        margin-right: 100px;
+        margin-left: 100px;
+        background-color: white;
+        box-shadow: 10px 10px 10px rgb(51, 51, 51);
+        margin-top: 80px;
+        margin-bottom: -110px;
+        color:rgb(51, 51, 51);
+}
+    .cuerpo .texto1:hover{
+        transform: translate(0px, -100%);
+}
+    .caja_mentores{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 100px;
+        width: 100%;
+        height: 600px;
+}
+    .caja_mentores .mentor .text{
+        border-radius: 20px;
+        border: 2px rgb(51, 51, 51) solid;
+        box-shadow: 10px 10px 10px rgb(51, 51, 51);
+        background-color: white;
+        width: 250px;
+        height: 220px;
+        text-align: center;
+        margin-bottom: -220px;
+        margin-left: 25px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 12px;
+}
+    .caja_mentores .mentor .text span{
+        font-weight: 800;
+}
+    .caja_mentores .mentor .text.lluis{
+        padding: 32px;
+}
+    .caja_mentores .mentor .text.beto{
+        padding: 11px;
+}
+    .caja_mentores .mentor .text.fer{
+        padding: 31px;
+}
+    .caja_mentores .mentor{
+        width: 300px;
+        height: 300px;      
+}
+    .caja_mentores .mentor .imagen img{
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        border: 2px rgb(51, 51, 51) solid;
+        box-shadow: 10px 10px 10px rgb(51, 51, 51);
+}
+    .caja_mentores .mentor .imagen img:hover{
+        transform: translate(0px, 80%);
+}
+    .caja_mentores .mentor .subtitulo{
+        margin-top: 30px;
+}
+
+/* CONTACTO */
+
+.cuerpo .texto3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+.cuerpo .texto3 .telefono .icono img{
+    width: 40px;
+    height: 40px;
+    margin-bottom: 115px;
+}
+.cuerpo .texto3 span{
+        font-weight: 800;
+}
+.cuerpo .texto3 .bloque{
+    border-radius: 20px;
+    border: 2px rgb(51, 51, 51) solid;
+    color: rgb(51, 51, 51);
+}
+.cuerpo .texto3 .tel{
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    margin-left: 100px;
+    padding: 5px;
+    margin-top: -80px;
+    margin-left: 3px;
+}
+.cuerpo .texto3 .telefono .tel a{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+.cuerpo .texto3 .info{
+    background-color: rgb(51, 51, 51);
+    color:white ;
+    width: 210px;
+    height: 80px;
+    padding: 10px;
+    margin-top: -60px;
+}
+.cuerpo .texto3 .info:hover{   
+    transform: translate(0px, -101%);   
+}
+.cuerpo .texto3 .correo .icono img{
+    width: 50px;
+    height: 40px;
+    margin-bottom: 115px;
+}
+.cuerpo .texto3 .correo .email{
+    width: 200px;
+    height: 30px;
+    background-color: white;
+    margin-left: 100px;
+    padding: 5px;
+    margin-top: -70px;
+    margin-left: 3px;
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+.cuerpo .texto3 .correo .email a{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+}
+.cuerpo .texto3 .infomail{
+    width: 200px;
+    height: 60px;
+    background-color: rgb(51, 51, 51);
+    color:white ;
+    width: 210px;
+    height: 80px;
+    padding: 10px;
+    margin-top: -55px;
+}
+.cuerpo .texto3 .infomail:hover{   
+    transform: translate(0px, 100%);   
+}
+.cuerpo .texto3 .bloque.lugar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 340px;
+    height: 380px;
+    background-color:rgb(51, 51, 51) ;
+   
+}
+.cuerpo .texto3 .bloque .ubicacion{
+    width: 200px;
+    height: 60px;
+    border-radius: 20px;
+    border: 2px rgb(51, 51, 51) solid;
+    text-align: center;
+    background-color: white;
+}
+.cuerpo .texto3 .map iframe{
+    width:300px;
+    height:300px;
+    border-radius: 20px;
+    border: 2px rgb(51, 51, 51) solid;
+}
+
+/* PIE DE PAGINA */
+
+    .footer{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(51, 51, 51);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .footer .iconos{
+        width: 20%;
+        background-color: rgb(51, 51, 51);
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+}
+    .footer .iconos img{
+        width: 40px;
+        height: 40px;   
+}
+    .footer .rotulo{
+          width: 60%;
+          background-color: rgb(51, 51, 51);
+          text-align: center;
+}
+      .footer .rotulo img{  
+          width: 200px;
+          height: 60px;    
+}
+    .footer .enlaces{
+        background-color: rgb(51, 51, 51);
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+}
+    .footer .enlaces a{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+}
+
+/* ALUMNOS */
+
+body .subtitulo{
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 600; 
+    color:rgb(51, 51, 51);
+}
+body .cuerpo_alumnos{
+    width: auto;
+    display:flex;
+    justify-content: space-around;
+}
+
+/* COLUMNAS LISTAS */
+
+body .cuerpo_alumnos .lista{
+    width: 270px;
+    text-align: center;
+    border: 2px solid rgb(51, 51, 51);
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
+    border-radius: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: silver;
+   }
+   body .cuerpo_alumnos .lista.ordenada{
+    height: 365px;
+   }
+   body .cuerpo_alumnos .lista.desordenada{
+    height: 415px;
+   }
+   body .cuerpo_alumnos .lista ol,
+   body .cuerpo_alumnos .lista ul{
+   text-align: center;
+   border: 1px solid rgb(51, 51, 51);
+   border-radius: 20px;
+   padding: 3px;
+   margin: 3px;
+   background-color: white;
+   }
+body .cuerpo_alumnos  h3{
+    font-size: 12px;
+    border: 1px solid rgb(51, 51, 51);
+    border-radius: 20px;
+    padding: 6px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+body .cuerpo_alumnos .lista .columna1{
+    display: flex;
+    text-align: center;
+    gap: 1px;
+    justify-content: space-around;
+}
+body .cuerpo_alumnos .lista .columna2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1px;
+    justify-content: space-around;
+}
+body .cuerpo_alumnos  p{
+    font-size: 12px;
+    font-weight: 800;
+}
+body .cuerpo_alumnos li{
+    font-size: 12px;
+    list-style-type:none;
+}
+
+/* TABLA */
+
+.alumnos{
+    border: 2px solid rgb(51, 51, 51);
+    border-radius: 20px;
+    margin: 10px;
+    padding-bottom: 1px;
+    height: 340px;
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
+    background-color: white;
+    margin-top: 20px;
+}
+.table{
+    border: 2px solid rgb(51, 51, 51);
+    border-radius: 20px;
+    text-align: center;
+    padding: 5px;
+    margin: 20px;
+    background-color: silver;
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
+    width: 600px;
+    height: 200px;
+}
+.table caption{
+    border: 2px solid rgb(51, 51, 51);
+    padding: 5px;
+    text-align: center;
+    width: 600px;
+    border-radius: 20px;
+    font-weight: 800;
+    font-size: 22px;
+    background-color: silver;
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
+    margin-bottom: 20px;
+}
+
+tbody{
+    border: 2px  rgb(51, 51, 51);
+    text-align: center;
+    margin: 5px;
+}
+body table tbody tr th{
+    border: 2px solid rgb(51, 51, 51);
+    text-align: center;
+    margin: 5px;
+    border-radius: 20px;
+    color:white;
+    background-color: rgb(51, 51, 51);
+}
+body table tbody tr td{
+    border: 2px solid rgb(51, 51, 51);
+    text-align: center;
+    margin: 5px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* HORARIO */
+
+body .horario{
+    text-align: center;
+    align-items: center;
+    width: 600px;
+    margin-left: 334px;
+    margin-top: -60px;
+    margin-bottom: 20px;
+    border: 2px solid rgb(51, 51, 51);
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 30px 20px 20px rgb(51, 51, 51);
+    background-color: white;
+}
+body .horario h3{
+    border: 2px solid rgb(51, 51, 51);
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
+    margin: 10px;
+}
+body .horario div{
+    border: 2px solid rgb(51, 51, 51);
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
+    margin: 10px;
+    background-color: silver;
+}
+body .horario div dl{
+    border: 2px solid rgb(51, 51, 51);
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
+    background-color: white;
+}
+body .horario div span{
+    font-weight: 800;
+}
+
+/* FORMULARIO */
+
+
+
+/* CONFIRMACION */
+
+.contenedor .subtitulo{
+margin-top: 40px;
+}
+
+.contenedor h5{
+font-size: 25px;
+text-align: center;
+border: 2px solid rgb(51, 51, 51);
+border-radius: 20px;
+margin: 20px;
+margin-bottom: 40px;
+background-color: white;
+color: rgb(51, 51, 51);
+box-shadow: 10px 10px 10px rgb(51, 51, 51);
+}
