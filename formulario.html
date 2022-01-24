@@ -30,7 +30,139 @@
                 <h1>/et's [oder</h1>
             </div>
         </div>
-        <h2 class="subtitulo">CURSO ENERO 2022</h2>
+        <h2 class="subtitulo">INSCRÍBETE</h2>
+        <div>
+            <form action="confirmacion.html"></form>
+            <fieldset>
+                <legend>DATOS PERSONALES</legend>
+                <div class="d_personales">
+                    <div class="nombre">
+                        <label for="nombre" required pattern="[A-Za-z]{3,15}">NOMBRE</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="NOMBRE">
+                        <label for="apellidos" required pattern="[A-Za-z]{3,15}">APELLIDOS</label>
+                        <input type="text" name="apellidos" id="apellidos" placeholder="APELLIDOS">
+                        <label for="edad">EDAD</label>
+                        <input type="number" id="edad" min="18" max="99" required>
+                        <label for="f_nacimiento">F.NACIMIENTO</label>
+                        <input type="date" name="f_nacimiento" id="f_nacimiento">
+                    </div>
+                    <div class="inf_contacto">
+                        <div>
+                            <label for="direccion">DIRECCIÓN</label>
+                            <input type="text" name="dirección" id="direccion" placeholder="DIRECCIÓN" required>
+                            <label for="numero">NÚMERO</label>
+                            <input type="number" id="dir_numero" placeholder="Nº" required>
+                            <label for="piso">PISO</label>
+                            <input class="min" type="number" id="dir_piso" placeholder="PISO" required>
+                            <label for="letra">LETRA</label>
+                            <select name="menu" id="dir_letra">
+                                <option value="0">...</option>
+                                <option value="1">A</option>
+                                <option value="2">B</option>
+                                <option value="3">C</option>
+                                <option value="4">D</option>
+                                <option value="5">E</option>
+                                <option value="6">F</option>
+                                <option value="7">G</option>
+                                <option value="8">H</option>
+                                <option value="9">I</option>
+                                <option value="10">J</option>
+                                <option value="11">K</option>
+                                <option value="12">L</option>
+                                <option value="13">M</option>
+                                <option value="14">N</option>
+                                <option value="15">Ñ</option>
+                                <option value="16">O</option>
+                                <option value="17">P</option>
+                                <option value="18">Q</option>
+                                <option value="19">R</option>
+                                <option value="20">S</option>
+                                <option value="21">T</option>
+                                <option value="22">U</option>
+                                <option value="23">V</option>
+                                <option value="24">W</option>
+                                <option value="22">X</option>
+                                <option value="23">Y</option>
+                                <option value="24">Z</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="codigo_postal">CODIGO POSTAL</label>
+                            <input type="text" minlength="5" maxlength="5" pattern="{10000, 99999}" name="codigo_postal"
+                                id="codigo_postal" placeholder="CODIGO POSTAL" required>
+                            <label for="ciudad" id="ciudad" required pattern="[A-Za-z]{2,12}">CIUDAD</label>
+                            <input type="text" name="ciudad" placeholder="CIUDAD" required>
+                            <label for="mail">CORREO ELECTRÓNICO</label>
+                            <input type="email" id="mail" name="user_mail" id="email" placeholder="EMAIL" required>
+                            <label for="telefono">TELEFONO</label>
+                            <input type="text" minlength="9" maxlength="" required pattern="{111111111, 999999999}"
+                                name="telefono" id="telefono" placeholder="TELEFONO">
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>SOBRE EL CURSO</legend>
+                <div class="about">
+                    <div class="option">
+                        <p>MARCA TUS CONOCIMIENTOS</p>
+                        <label for="ninguno"></label>
+                        <input type="checkbox" id="ninguno">NINGUNO
+                        <label for="html"></label>
+                        <input type="checkbox" id="html">HTML
+                        <label for="css"></label>
+                        <input type="checkbox" id="css">CSS
+                        <label for="javascript"></label>
+                        <input type="checkbox" id="javascript">JAVASCRIPT
+                        <label for="jQuery"></label>
+                        <input type="checkbox" id="jQuery">jQuery
+                        <label for="angular+nestjs"></label>
+                        <input type="checkbox" id="angularnestjs">Angular+NestJS
+                        <label for="React+redux"></label>
+                        <input type="checkbox" id="reactredux">React+Redux
+                        <label for="otros"></label>
+                        <input type="checkbox" id="otros">OTROS: Indica cuales.
+                        <label for="text_otros"></label>
+                        <input type="text" name="text_otros" id="text_otros" placeholder="Escribe aqui">
+                    </div>
+                </div>
+                <div class="about">
+                    <label for="know">DONDE NOS CONOCISTE</label>
+                    <select name="know" id="know" required>
+                        <option value="0">...</option>
+                        <option value="1">PRENSA</option>
+                        <option value="2">TELEVISION</option>
+                        <option value="3">FACEBOOK</option>
+                        <option value="4">INSTAGRAM</option>
+                        <option value="5">TWITTER</option>
+                        <option value="6">OTRO:</option>
+                    </select>
+                    <label for="which">QUE MODALIDAD PREFIERES</label>
+                    <select name="which" id="which" required>
+                        <option value="0">...</option>
+                        <option value="1">FULL-TIME</option>
+                        <option value="2">PART-TIME</option>
+                        <option value="3">PRESENCIAL</option>
+                    </select>
+
+
+                </div>
+                <div class="about cuentanos">
+                    <label for="mas">CUENTANOS MAS SOBRE TI Y TUS RAZONES PARA REALIZAR UN BOOTCAMP</label>
+                    <textarea name="mas" rows="8" cols="8">Escriba aqui</textarea>
+                </div>
+                <div class="botones_formulario">
+                    <div class="button send">
+                        <div><label for="send">ENVIAR FORMULARIO</label></div>
+                        <button type="submit" name="send">Enviar</button>
+                    </div>
+                    <div class="button reset">
+                        <div><label for="reset">BORRAR TODO</label></div>
+                        <button type="reset" name="reset">Borrar</button>
+                    </div>
+                </div>
+            </fieldset>
+        </div>
     </body>
     <footer>
         <div class="footer">

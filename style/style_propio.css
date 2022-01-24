@@ -161,7 +161,7 @@
     vertical-align: 15px;
     box-shadow: 10px 10px 10px rgb(51, 51, 51);
     background-color:gold;
-    font-size: 20px;
+    font-size: 18px;
     text-align: center;
     padding: 10px;
     height:120px;
@@ -453,14 +453,16 @@ body .cuerpo_alumnos .lista{
    padding: 3px;
    margin: 3px;
    background-color: white;
+   box-shadow: 10px 10px 10px rgb(51, 51, 51);
    }
 body .cuerpo_alumnos  h3{
     font-size: 12px;
-    border: 1px solid rgb(51, 51, 51);
+    border: 1px solid white;
     border-radius: 20px;
     padding: 6px;
     background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
 }
 body .cuerpo_alumnos .lista .columna1{
     display: flex;
@@ -588,12 +590,108 @@ body .horario div span{
 
 /* FORMULARIO */
 
+.contenedor div fieldset{
+    margin: 40px;
+    padding: 20px;
+    border: 2px solid rgb(51, 51, 51);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
+    background-color: white;
+}
+.contenedor div fieldset legend{
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+    font-weight: 800;
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
 
-
+}
+.contenedor div fieldset .d_personales{
+    text-align:justify;
+    margin: 20px;
+    padding: 20px;
+    list-style-type: none; 
+}
+.contenedor div fieldset .inf_contacto{
+    display: flex;
+}
+.contenedor div fieldset .inf_contacto div{
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    border-radius: 20px;
+    border: 2px solid rgb(51, 51, 51);
+    text-align:justify;
+    padding: 20px;
+    background-color: silver;
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
+}
+.contenedor div fieldset .nombre{
+    border-radius: 20px;
+    border: 2px solid rgb(51, 51, 51);
+    text-align:justify;
+    margin: 20px;
+    padding: 20px;
+    background-color: silver;
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
+    }
+.contenedor div fieldset input,
+.contenedor div fieldset select{
+    border-radius: 20px;
+    border: 2px solid rgb(51, 51, 51);
+    text-align: center;
+} 
+.contenedor div fieldset .about{
+    border-radius: 20px;
+    border: 2px solid rgb(51, 51, 51);
+    margin: 20px;
+    padding: 20px;
+    background-color: silver;
+    box-shadow: 10px 10px 10px rgb(51, 51, 51);
+    }
+    .contenedor div fieldset .about.cuentanos{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+    .contenedor div fieldset .about.cuentanos textarea{
+        
+        width: 300px;
+        height: 300px;
+        border-radius: 20px;
+        border: 2px solid rgb(51, 51, 51);
+        margin: 20px;
+        padding: 20px;
+        align-items: center;
+        margin-left: 370px;
+        }
+        .contenedor div fieldset .botones_formulario{
+            display: flex;
+            justify-content:space-evenly;
+        }
+        .contenedor div fieldset .botones_formulario .button{
+        display: flex;
+        flex-direction: column;
+        }
+        .contenedor div fieldset .botones_formulario .button div input{
+        padding: 20px;
+        color: white;
+        background-color:rgb(51, 51, 51) ;
+}
 /* CONFIRMACION */
 
-.contenedor .subtitulo{
+.contenedor .confirmacion .subtitulo{
 margin-top: 40px;
+}
+.contenedor.confirmacion{
+    display: flex;
+    flex-direction: column;
+
 }
 
 .contenedor h5{
@@ -606,4 +704,21 @@ margin-bottom: 40px;
 background-color: white;
 color: rgb(51, 51, 51);
 box-shadow: 10px 10px 10px rgb(51, 51, 51);
+}
+.contenedor .confirmacion .volver{
+display: flex;
+justify-content: center;
+}
+.contenedor .volver a{
+border: 2px solid rgb(51, 51, 51);
+border-radius: 20px;
+width: 150px;
+margin-bottom: 40px;
+background-color: rgb(51, 51, 51);
+color: white;
+box-shadow: 10px 10px 10px rgb(51, 51, 51);
+text-decoration: none;
+font-size: 20px;
+padding: 20px;
+text-align: center;
 }
