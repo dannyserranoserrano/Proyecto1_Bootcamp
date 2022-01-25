@@ -170,7 +170,11 @@
     transition: all 2s;
     cursor: pointer;
     color:rgb(51, 51, 51);
-}
+    }
+    .cuerpo .fechas button a{
+    text-decoration: none;
+    color: rgb(51, 51, 51);
+    }
 
 /* CONOCENOS */
 
@@ -608,7 +612,6 @@ body .horario div span{
     color: white;
     font-weight: 800;
     box-shadow: 10px 10px 10px rgb(51, 51, 51);
-
 }
 .contenedor div fieldset .d_personales{
     text-align:justify;
@@ -678,11 +681,22 @@ body .horario div span{
         display: flex;
         flex-direction: column;
         }
-        .contenedor div fieldset .botones_formulario .button div input{
-        padding: 20px;
+        .contenedor div fieldset .botones_formulario .button button{
         color: white;
         background-color:rgb(51, 51, 51) ;
-}
+        border-radius: 20px;
+        border: 2px solid rgb(51, 51, 51);
+        width: 100px;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        box-shadow: 10px 10px 10px rgb(51, 51, 51);
+        display: inline-block;
+        transition: all 0.5s;
+        cursor: pointer;
+    }
+
+
 /* CONFIRMACION */
 
 .contenedor .confirmacion .subtitulo{
@@ -691,9 +705,7 @@ margin-top: 40px;
 .contenedor.confirmacion{
     display: flex;
     flex-direction: column;
-
 }
-
 .contenedor h5{
 font-size: 25px;
 text-align: center;
@@ -722,3 +734,126 @@ font-size: 20px;
 padding: 20px;
 text-align: center;
 }
+
+/* MEDIA QUERY */
+/* HOME */
+    @media only screen and (max-width:800px){
+        #fecha1{
+        margin-left:30px;
+    }
+        #fecha2{
+        margin-left:30px;
+        margin-top: 30px;
+    }
+        #fecha3{
+        margin-left:30px;
+        margin-top: 30px;
+    }
+        .contenedor .cuerpo .fechas div button{
+        margin-left: 65px;
+    }
+}
+/* CONOCENOS */
+    @media only screen and (max-width:800px) {
+        .contenedor{
+        width: 450px;
+        }
+        .contenedor .cabecera{
+        margin-left: 10px;
+        }
+        .contenedor div .cuerpo div{
+        margin-left: 10px;  
+        }
+        .contenedor div .cuerpo div div .texto1_1{
+        margin-top: 40px;
+        }
+        .contenedor div .cuerpo div div .texto1{
+        margin-top: -60px;
+        }
+        .contenedor div .caja_mentores .mentor .imagen{
+        margin-left: 40px;
+        }
+        .contenedor div .caja_mentores .mentor{
+        margin-left: -190px;
+        margin-top: 10px;
+        margin-bottom: 100px;
+        }
+       .contenedor div .caja_mentores .mentor .lluis{
+        margin-left: 70px;
+        margin-top: 320px;
+        } 
+        .contenedor div .caja_mentores .mentor .beto{
+        margin-left: 70px;
+        margin-top: 320px;
+        } 
+        .contenedor div .caja_mentores .mentor .fer{
+        margin-left: 70px;
+        margin-top: 320px;
+        } 
+        .contenedor footer{
+        margin-top: 700px;
+        margin-left: -250px;
+        }
+}
+/* CURSOENE22 */
+@media only screen and (max-width:800px){
+.contenedor {
+    display: flex;
+    flex-direction: column;
+}
+.cuerpo_alumnos {
+    display: flex;
+    flex-direction: column;
+    height: 800px;
+}
+.contenedor .cuerpo_alumnos  {
+    height: 900px;
+}
+.contenedor .cuerpo_alumnos .lista.ordenada .columna1{
+    display: flex;
+   }
+}
+/* FORMULARIO */
+    @media only screen and (max-width:800px){
+        .contenedor div,
+        .contenedor div menu a{
+        display: flex;
+        flex-direction: column;
+        margin-left: 30px;
+        }
+        #inf_contacto,
+        #cod_postal{
+        margin-left: -5px;
+        margin-top: 30px;
+        }
+        .contenedor div form fieldset div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 200px;
+        margin-left: 30px;
+        }
+        .contenedor div form fieldset .botones_formulario{
+        text-align: left;
+        }
+        .contenedor div form fieldset .about .option{
+        text-align: left;
+        margin-left: 5px;
+        }
+        #text_otros{
+        width: 150px;
+        }
+        #mas{
+        height: 100px;
+        width: 100px;
+        margin-left: 30px;
+        }
+        #send,
+        #reset{
+        height: 20px;
+        width: 80px;
+        margin-left: 50px;
+        font-size: 10px;
+        }
+    }
+/* CONTACTO */

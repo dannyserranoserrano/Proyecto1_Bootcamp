@@ -9,52 +9,53 @@
     <title>Formulario</title>
 </head>
 
-<body>
+<body class="contenedor">
 
-    <body class="contenedor">
-        <div>
-            <nav class="menu">
-                <a class="enlace1" href="./home.html">HOME</a>
-                <a class="enlaces" href="./conocenos.html">CONÓCENOS</a>
-                <a class="enlaces" href="./curso_ene22.html">PROMOCIÓN ENE'22</a>
-                <a class="enlaces" href="./formulario.html">INSCRIBETE</a>
-                <a class="enlace3" href="./contacto.html">CONTACTO</a>
-            </nav>
-        </div>
+    <div>
+        <nav class="menu">
+            <a class="enlace1" href="./home.html">HOME</a>
+            <a class="enlaces" href="./conocenos.html">CONÓCENOS</a>
+            <a class="enlaces" href="./curso_ene22.html">PROMOCIÓN ENE'22</a>
+            <a class="enlaces" href="./formulario.html">INSCRIBETE</a>
+            <a class="enlace3" href="./contacto.html">CONTACTO</a>
+        </nav>
+    </div>
 
-        <div class="cabecera">
-            <div class=logo>
-                <img src="./images/images/letscoder-square.jpeg" alt="logo">
-            </div>
-            <div class="titulo">
-                <h1>/et's [oder</h1>
-            </div>
+    <div class="cabecera">
+        <div class=logo>
+            <img src="./images/images/letscoder-square.jpeg" alt="logo">
         </div>
-        <h2 class="subtitulo">INSCRÍBETE</h2>
-        <div>
-            <form action="confirmacion.html"></form>
+        <div class="titulo">
+            <h1>/et's [oder</h1>
+        </div>
+    </div>
+    <h2 class="subtitulo">INSCRÍBETE</h2>
+    <div>
+        <form action="/confirmacion.html">
             <fieldset>
                 <legend>DATOS PERSONALES</legend>
                 <div class="d_personales">
                     <div class="nombre">
-                        <label for="nombre" required pattern="[A-Za-z]{3,15}">NOMBRE</label>
-                        <input type="text" name="nombre" id="nombre" placeholder="NOMBRE">
-                        <label for="apellidos" required pattern="[A-Za-z]{3,15}">APELLIDOS</label>
-                        <input type="text" name="apellidos" id="apellidos" placeholder="APELLIDOS">
+                        <label for="nombre">NOMBRE</label>
+                        <input type="text" name="nombre" id="nombre" required pattern="[A-Za-z]{3,15}"
+                            placeholder="NOMBRE">
+                        <label for="apellidos">APELLIDOS</label>
+                        <input type="text" name="apellidos" id="apellidos" required "
+                            placeholder=" APELLIDOS">
                         <label for="edad">EDAD</label>
                         <input type="number" id="edad" min="18" max="99" required>
                         <label for="f_nacimiento">F.NACIMIENTO</label>
                         <input type="date" name="f_nacimiento" id="f_nacimiento">
                     </div>
                     <div class="inf_contacto">
-                        <div>
+                        <div id="inf_contacto">
                             <label for="direccion">DIRECCIÓN</label>
                             <input type="text" name="dirección" id="direccion" placeholder="DIRECCIÓN" required>
-                            <label for="numero">NÚMERO</label>
+                            <label for="dir_numero">NÚMERO</label>
                             <input type="number" id="dir_numero" placeholder="Nº" required>
                             <label for="piso">PISO</label>
-                            <input class="min" type="number" id="dir_piso" placeholder="PISO" required>
-                            <label for="letra">LETRA</label>
+                            <input class="min" type="number" id="piso" placeholder="PISO" required>
+                            <label for="dir_letra">LETRA</label>
                             <select name="menu" id="dir_letra">
                                 <option value="0">...</option>
                                 <option value="1">A</option>
@@ -86,17 +87,17 @@
                                 <option value="24">Z</option>
                             </select>
                         </div>
-                        <div>
+                        <div class="cod_postal" id="cod_postal">
                             <label for="codigo_postal">CODIGO POSTAL</label>
-                            <input type="text" minlength="5" maxlength="5" pattern="{10000, 99999}" name="codigo_postal"
+                            <input type="text" minlength="5" maxlength="5" pattern="[0-9]{5}" name="codigo_postal"
                                 id="codigo_postal" placeholder="CODIGO POSTAL" required>
-                            <label for="ciudad" id="ciudad" required pattern="[A-Za-z]{2,12}">CIUDAD</label>
-                            <input type="text" name="ciudad" placeholder="CIUDAD" required>
+                            <label for="ciudad" required pattern="[A-Za-z]{2,12}">CIUDAD</label>
+                            <input type="text" name="ciudad" id="ciudad" placeholder="CIUDAD" required>
                             <label for="mail">CORREO ELECTRÓNICO</label>
                             <input type="email" id="mail" name="user_mail" id="email" placeholder="EMAIL" required>
                             <label for="telefono">TELEFONO</label>
-                            <input type="text" minlength="9" maxlength="" required pattern="{111111111, 999999999}"
-                                name="telefono" id="telefono" placeholder="TELEFONO">
+                            <input type="text" minlength="9" maxlength="" required pattern="[0-9]{9}" name="telefono"
+                                id="telefono" placeholder="TELEFONO">
                         </div>
                     </div>
                 </div>
@@ -149,49 +150,50 @@
                 </div>
                 <div class="about cuentanos">
                     <label for="mas">CUENTANOS MAS SOBRE TI Y TUS RAZONES PARA REALIZAR UN BOOTCAMP</label>
-                    <textarea name="mas" rows="8" cols="8">Escriba aqui</textarea>
+                    <textarea name="mas" id="mas" rows="8" cols="8">Escriba aqui</textarea>
                 </div>
                 <div class="botones_formulario">
                     <div class="button send">
                         <div><label for="send">ENVIAR FORMULARIO</label></div>
-                        <button type="submit" name="send">Enviar</button>
+                        <button type="submit" id="send" name="send">Enviar</button>
                     </div>
                     <div class="button reset">
                         <div><label for="reset">BORRAR TODO</label></div>
-                        <button type="reset" name="reset">Borrar</button>
+                        <button type="reset" id="reset" name="reset">Borrar</button>
                     </div>
                 </div>
             </fieldset>
-        </div>
-    </body>
-    <footer>
-        <div class="footer">
-            <div class="iconos">
-                <div>
-                    <a title="Instagram" href="https://www.instagram.com/lets_coder/"><img
-                            src="images/images/Instagram.png" alt="Instagram"></a>
-                </div>
-                <div>
-                    <a title="Facebook" href="https://www.facebook.com/letscoder"><img src="images/images/facebook.png"
-                            alt="Facebook"></a>
-                </div>
-                <div>
-                    <a title="Linkedin" href="https://www.linkedin.com/company/letscoder"><img
-                            src="images/images/linkedin2.png" alt="Linkedink"></a>
-                </div>
+        </form>
+    </div>
+</body>
+<footer>
+    <div class="footer">
+        <div class="iconos">
+            <div>
+                <a title="Instagram" href="https://www.instagram.com/lets_coder/"><img src="images/images/Instagram.png"
+                        alt="Instagram"></a>
             </div>
-            <div class="rotulo">
-                <div>
-                    <a title="letscoder" href="./home.html"><img src="/images/images/letscoder-sin-fondo.png"
-                            alt="letscoder"></a>
-                </div>
+            <div>
+                <a title="Facebook" href="https://www.facebook.com/letscoder"><img src="images/images/facebook.png"
+                        alt="Facebook"></a>
             </div>
-            <div class="enlaces">
-                <a href="mailto:">hola@letscoder.com</a>
-                <a href="tel:+34 931 227 721">LLAMANOS AL +34 931 227 721</a>
+            <div>
+                <a title="Linkedin" href="https://www.linkedin.com/company/letscoder"><img
+                        src="images/images/linkedin2.png" alt="Linkedink"></a>
             </div>
         </div>
+        <div class="rotulo">
+            <div>
+                <a title="letscoder" href="./home.html"><img src="/images/images/letscoder-sin-fondo.png"
+                        alt="letscoder"></a>
+            </div>
+        </div>
+        <div class="enlaces">
+            <a href="mailto:">hola@letscoder.com</a>
+            <a href="tel:+34 931 227 721">LLAMANOS AL +34 931 227 721</a>
+        </div>
+    </div>
 
-    </footer>
+</footer>
 
 </html>
